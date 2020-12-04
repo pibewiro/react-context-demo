@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open sans";
+}
+
+:root {
+  --primary: #001746;
+  --lightGray: rgba(173, 173, 173, 0.5);
+}
+
+h1 {
+  font-weight: 100;
+}
+
+nav {
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.car {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--lightGray);
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 10px var(--lightGray);
+}
+
+.imgDiv {
+  width: 50%;
+  height: 300px;
+}
+
+.imgDiv img {
+  width: 100%;
+  height: 100%;
+}
+
+.carInfo {
+  width: 50%;
+}
+
+.carInfo p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.addCars {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.addCar {
+  margin: 10px 0;
+}
+.addCars input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--lightGray);
+  border-radius: 5px;
+}
+
+.addCars input:focus {
+  outline: none;
+}
+
+.addCars button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.addCars h1 {
+  text-align: center;
+}
+
+.boldFont {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  .car,
+  .addCars {
+    width: 95%;
+    display: block;
+  }
+
+  .imgDiv,
+  .carInfo {
+    width: 100%;
+  }
+
+  nav {
+    font-size: 9px;
+  }
+}
